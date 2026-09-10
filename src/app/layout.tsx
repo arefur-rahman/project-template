@@ -17,10 +17,11 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+const site_name = "${site_name}"; // dummy site_name; you must change it to the actual one.
 export const siteConfig: SiteConfig = {
     baseUrl: "https://site_url.com",
-    siteName: "Site Name",
-    title: "Site Name",
+    siteName: site_name,
+    title: site_name,
     description: "Site description",
     ogImage: "/brand_logo_xl.png",
     twitterHandle: "@brandname",

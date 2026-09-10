@@ -6,12 +6,21 @@
         "dev": "rm -rf .next && next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "db-push": "pnpm dlx prisma@6.19.3 db push"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@prisma/engines",
+            "prisma"
+        ]
     },
     "dependencies": {
+        "@prisma/client": "6.19",
         "@tabler/icons-react": "^3.44.0",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "dotenv": "^17.4.2",
         "lucide-react": "^1.17.0",
         "next": "16.2.7",
         "postcss": "^8.5.15",
@@ -29,6 +38,7 @@
         "@types/react-dom": "^19",
         "eslint": "^9",
         "eslint-config-next": "16.2.7",
+        "prisma": "~6.19.3",
         "tailwindcss": "^4.3.0",
         "typescript": "^5"
     }
